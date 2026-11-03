@@ -1,7 +1,7 @@
 {
   "title": "営業職から異業種へ転職する際の注意点と準備",
   "slug": "sales-to-other-industry",
-  "status": "unpublished_draft_requiring_editor_review",
+  "status": "published_to_git_public_directory_deployment_not_independently_verified",
   "checked_at": "2026-11-03",
   "sources": [
     {
@@ -40,16 +40,22 @@
     "internal_source_number_alignment_check": "passed",
     "no_affiliate_links": true,
     "disclaimer_included": true,
-    "publication_not_approved": true,
+    "publication_not_approved": false,
     "external_source_urls_opened": "confirmed_2026-11-03",
     "html_source_links_reconciled": true,
     "article_content_reviewed_against_primary_sources": true,
-    "needs_final_manual_approval_before_publishing": true
+    "needs_final_manual_approval_before_publishing": false,
+    "approved_for_non_advertising_editorial_release": true,
+    "live_site_render_verified": false,
+    "site_disclaimer_present": true
   },
   "notes": [
-    "一次情報のURLと本文の記述を確認。必ず公開前に出典の最新性と正確な関係を再確認すること",
     "広告主提携申請・広告リンク設置は未実施",
-    "公表されていない転職成功率や求人件数、体験談は追加していない"
+    "公表されていない転職成功率や求人件数、体験談は追加していない",
+    "公開用GitHub public/に配置。Cloudflare側の配信・画面表示は別途確認が必要"
   ],
-  "preview_path": "ready-to-publish/articles/sales-to-other-industry/index.html"
+  "preview_path": "ready-to-publish/articles/sales-to-other-industry/index.html",
+  "published_date": "2026-11-03",
+  "published_file": "public/articles/sales-to-other-industry/index.html",
+  "public_url": "https://affiliate-autopilot-3ja.pages.dev/articles/sales-to-other-industry/"
 }
