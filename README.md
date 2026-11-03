@@ -70,8 +70,16 @@
 - 定期生成する記事の自動公開は未設定のまま。公開判断は個別に行う
 
 ## 追加記事の下書き（2026-11-03）
-- 2本目: `drafts/sales-to-other-industry.md`、未公開HTML: `ready-to-publish/articles/sales-to-other-industry/index.html`
-- 3本目: `drafts/specialized-vs-general-agents.md`、未公開HTML: `ready-to-publish/articles/specialized-vs-general-agents/index.html`
+- 2本目: `drafts/sales-to-other-industry.md` → `public/articles/sales-to-other-industry/index.html`（広告リンクなしで公開用登録済み）
+- 3本目: `drafts/specialized-vs-general-agents.md` → `public/articles/specialized-vs-general-agents/index.html`（広告リンクなしで公開用登録済み）
 - 両方とも公式一次情報6件を参照し、出典番号・免責文・未公開設定をチェック。広告リンクなし。
-- 公開用の `public/` にはコピーしていない。公開には個別の最終確認が必要。
-- お問い合わせ窓口: 未設置。公開可能な専用連絡先（メールなど）の用意が必要。本人の私用アドレスを無断公開しない。
+- 2本目・3本目は公式情報を再点検して `public/` に配置済み。ただしCloudflare上の実表示は未確認。
+- お問い合わせ窓口: `erabichizu.contact@gmail.com` を運営者情報・プライバシーポリシーに掲載済み。利用者が送受信確認済み。
+
+## 2026-11-03 サイト更新
+- 記事2・3本目を `public/articles/` に追加、トップページと記事一覧からリンク
+- サイトマップを全8ページに更新
+- `public/about/index.html` と `public/privacy/index.html` に専用メールアドレスを掲載。送受信できることを利用者が確認済み
+- 各公開用HTMLに免責文と記事一覧への導線を配置
+- 広告主との提携・広告リンク設置は未実施。今後のAI記事の自動公開も未設定
+- Cloudflare上で更新後のページが閲覧できるかは未検証（ユーザーのブラウザでの確認が必要）
