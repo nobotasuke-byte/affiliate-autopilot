@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "publication_mode": "manual_review",
+  "require_source_url": true,
+  "require_source_verified_at": true,
+  "require_verified_primary_source_for": [
+    "price",
+    "fee",
+    "reward",
+    "campaign",
+    "eligibility",
+    "specification",
+    "legal_or_tax_claim"
+  ],
+  "block_publication_when": [
+    "missing_source",
+    "unverified_price_or_terms",
+    "broken_source_url",
+    "affiliate_disclosure_missing",
+    "asp_policy_unconfirmed"
+  ],
+  "require_affiliate_disclosure": true,
+  "require_asp_terms_check": true,
+  "allow_ai_only_fact_check": false,
+  "allow_unreviewed_autopublish": false
+}
