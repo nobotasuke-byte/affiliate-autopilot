@@ -15,6 +15,7 @@ from html.parser import HTMLParser
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
 KEY = os.getenv("GEMINI_API_KEY", "")
+DISCLAIMER = "当サイトに掲載される情報は、正確性・完全性を保証するものではなく、内容を利用することで生じた損害について、当サイト運営者は故意または重過失がある場合を除き責任を負いません。"
 
 
 class VisibleText(HTMLParser):
@@ -205,6 +206,7 @@ def main():
             "claims": article["claims"],
             "warning": "Quote presence is checked mechanically; claim entailment is NOT verified.",
         }
+        lines += ["", "## 免責事項", "", DISCLAIMER, ""]
         destination.parent.mkdir(parents=True, exist_ok=True)
         proof = ROOT / "evidence" / (slug + ".json")
         proof.parent.mkdir(parents=True, exist_ok=True)
