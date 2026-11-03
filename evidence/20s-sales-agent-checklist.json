@@ -1,5 +1,5 @@
 {
-  "status": "ready_for_editor_review_not_published",
+  "status": "published_to_git_public_directory_deployment_not_independently_verified",
   "checked_at": "2026-11-03",
   "title": "20代の営業職が転職エージェントを選ぶときの5つの確認ポイント",
   "slug": "20s-sales-agent-checklist",
@@ -49,14 +49,19 @@
     "広告主・ASPのプログラム成果条件は、サービス利用資格と異なるため本文に転記しない",
     "広告契約・提携・広告リンクは未設定",
     "給与・求人数・満足度・転職成功率などの検証困難な数値は扱わない",
-    "運営者ページのお問い合わせ窓口は未設置。正式な公開前に整理が必要",
-    "今後の公開承認は手動で行い、public/には自動コピーしない"
+    "運営者ページのお問い合わせ窓口は未設置。広告提携・本格集客前の整備課題",
+    "この記事は利用者の公開準備への了承を受けて手動でpublic/へ移した。今後の自動公開は未設定"
   ],
   "checks": {
     "primary_source_links_present": true,
     "site_disclaimer_included": true,
     "affiliate_links_included": false,
-    "article_still_unpublished": true,
-    "needs_final_editorial_review": true
-  }
+    "article_still_unpublished": false,
+    "needs_final_editorial_review": false,
+    "source_urls_rechecked_2026_11_03": true,
+    "live_site_render_verified": false
+  },
+  "published_file": "public/articles/20s-sales-agent-checklist/index.html",
+  "public_url": "https://affiliate-autopilot-3ja.pages.dev/articles/20s-sales-agent-checklist/",
+  "published_date": "2026-11-03"
 }
