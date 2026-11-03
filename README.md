@@ -49,3 +49,12 @@
 - `public/assets/site.css`: 共通デザイン
 - 広告案件・ASP登録・問い合わせ手段は未設定。法令上必要な表示および情報送信の実態は広告導入前に見直す。
 - 現在の公開用HTMLは `noindex`、`public/robots.txt` はクロール禁止設定。正式公開時には見直す。
+
+## 先行制作記事（2026-11-03）
+- 1本目「20代の営業職が転職エージェントを選ぶときの5つの確認ポイント」: `drafts/20s-sales-agent-checklist.md`
+- 掲載準備用HTML: `ready-to-publish/articles/20s-sales-agent-checklist/index.html`（公開対象の `public/` には未配置）
+- 照合記録: `evidence/20s-sales-agent-checklist.json`
+- 参考資料: 厚生労働省の公式ページ等5件とhape Agent公式1件。出典URLと記事内引用番号の整合確認済み
+- 記事への広告リンク: なし。サイトへの公開: **未実施**
+- A8.net: 会員登録完了とユーザー申告あり。hape Agentの成果・否認条件は提供された画面で一部確認済み、提携は未実施
+- 公開前に残る作業: 編集最終確認、問い合わせ窓口整備、広告提携判断、検索エンジン抑制設定の見直し
