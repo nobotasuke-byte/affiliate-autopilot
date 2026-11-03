@@ -68,3 +68,10 @@
 - `public/sitemap.xml`: URL 6件を登録
 - 個別記事に広告リンクなし／APIキーは非公開のGitHub Secretsで管理
 - 定期生成する記事の自動公開は未設定のまま。公開判断は個別に行う
+
+## 追加記事の下書き（2026-11-03）
+- 2本目: `drafts/sales-to-other-industry.md`、未公開HTML: `ready-to-publish/articles/sales-to-other-industry/index.html`
+- 3本目: `drafts/specialized-vs-general-agents.md`、未公開HTML: `ready-to-publish/articles/specialized-vs-general-agents/index.html`
+- 両方とも公式一次情報6件を参照し、出典番号・免責文・未公開設定をチェック。広告リンクなし。
+- 公開用の `public/` にはコピーしていない。公開には個別の最終確認が必要。
+- お問い合わせ窓口: 未設置。公開可能な専用連絡先（メールなど）の用意が必要。本人の私用アドレスを無断公開しない。
