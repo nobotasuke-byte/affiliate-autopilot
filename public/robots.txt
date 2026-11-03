@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://affiliate-autopilot-3ja.pages.dev/sitemap.xml
