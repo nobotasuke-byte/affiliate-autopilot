@@ -1,0 +1,62 @@
+{
+  "status": "ready_for_editor_review_not_published",
+  "checked_at": "2026-11-03",
+  "title": "20代の営業職が転職エージェントを選ぶときの5つの確認ポイント",
+  "slug": "20s-sales-agent-checklist",
+  "prepared_by": "えらびの地図編集室（AI補助による起案）",
+  "publication_target": "public/articles/20s-sales-agent-checklist/index.html",
+  "current_preview_path": "ready-to-publish/articles/20s-sales-agent-checklist/index.html",
+  "external_sources": [
+    {
+      "n": 1,
+      "name": "厚生労働省「キャリアを見直したい」",
+      "url": "https://www.mhlw.go.jp/roudou-navi/incumbent/03.html",
+      "supports": "経験やスキルの棚卸し、ジョブ・カードの利用"
+    },
+    {
+      "n": 2,
+      "name": "厚生労働省 job tag「よくあるお問い合わせ」",
+      "url": "https://shigoto.mhlw.go.jp/User/faq",
+      "supports": "適性・興味等の診断結果は参考として活用する"
+    },
+    {
+      "n": 3,
+      "name": "厚生労働省 job tag「利用方法」",
+      "url": "https://shigoto.mhlw.go.jp/user/howto",
+      "supports": "職業検索・職業解説・スキル等の情報が取得できる"
+    },
+    {
+      "n": 4,
+      "name": "hape Agent「公式サイト」",
+      "url": "https://agent.hape.co.jp/",
+      "supports": "営業職向け支援、無料相談、書類作成支援、面接対策、オンライン面談"
+    },
+    {
+      "n": 5,
+      "name": "厚生労働省「職業安定法施行規則改正｜労働条件明示等」",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/haken-shoukai/r0604anteisokukaisei1.html",
+      "supports": "2024年4月からの募集時の明示事項追加"
+    },
+    {
+      "n": 6,
+      "name": "厚生労働省「確かめよう労働条件：採用時にはどのような労働条件が明示されるのでしょうか？」",
+      "url": "https://www.check-roudou.mhlw.go.jp/qa/roudousya/koyou/q1.html",
+      "supports": "労働条件の書面等による確認"
+    }
+  ],
+  "editorial_risks": [
+    "本記事の5項目は編集提案であり、法律・行政の定めた選定基準ではない",
+    "広告主・ASPのプログラム成果条件は、サービス利用資格と異なるため本文に転記しない",
+    "広告契約・提携・広告リンクは未設定",
+    "給与・求人数・満足度・転職成功率などの検証困難な数値は扱わない",
+    "運営者ページのお問い合わせ窓口は未設置。正式な公開前に整理が必要",
+    "今後の公開承認は手動で行い、public/には自動コピーしない"
+  ],
+  "checks": {
+    "primary_source_links_present": true,
+    "site_disclaimer_included": true,
+    "affiliate_links_included": false,
+    "article_still_unpublished": true,
+    "needs_final_editorial_review": true
+  }
+}
