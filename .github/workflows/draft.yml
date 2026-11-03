@@ -1,0 +1,35 @@
+name: Generate draft (review required)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 1 * * 1"
+permissions:
+  contents: write
+concurrency:
+  group: affiliate-draft
+  cancel-in-progress: false
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate a verified-evidence draft
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-3.5-flash-lite
+        run: python automation/generate_draft.py
+      - name: Save draft and evidence to repository
+        run: |
+          if [ -n "$(git status --porcelain -- drafts/ evidence/)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add drafts/ evidence/
+            git commit -m "Generate source-backed draft for review"
+            git push
+          else
+            echo "No new draft"
+          fi
