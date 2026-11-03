@@ -37,10 +37,14 @@
   ],
   "checks": {
     "external_primary_sources_reviewed": true,
-    "internal_source_number_alignment_check": "pending",
+    "internal_source_number_alignment_check": "passed",
     "no_affiliate_links": true,
     "disclaimer_included": true,
-    "publication_not_approved": true
+    "publication_not_approved": true,
+    "external_source_urls_opened": "confirmed_2026-11-03",
+    "html_source_links_reconciled": true,
+    "article_content_reviewed_against_primary_sources": true,
+    "needs_final_manual_approval_before_publishing": true
   },
   "notes": [
     "一次情報のURLと本文の記述を確認。必ず公開前に出典の最新性と正確な関係を再確認すること",
