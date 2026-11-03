@@ -36,3 +36,16 @@
 - 景品表示法、広告表示ガイドライン、ASP規約、利用規約、著作権に配慮する。
 
 **注意:** この段階では稼働や収益を保証せず、無人運用はできません。
+
+## 公開サイト（2026-11-03 更新）
+- サイト名: えらびの地図
+- サイト内運営者表記: えらびの地図編集室（法人名ではない）
+- Cloudflare Pages: https://affiliate-autopilot-3ja.pages.dev/ （デプロイ結果の画面確認済み。今回の更新の実表示は未確認）
+- 公開用ファイル: `public/` のみ（下書きは公開しない）
+- `public/index.html`: 新トップページ
+- `public/about/index.html`: 運営者情報（連絡先は未整備）
+- `public/advertising/index.html`: 広告掲載方針
+- `public/privacy/index.html`: プライバシーポリシー
+- `public/assets/site.css`: 共通デザイン
+- 広告案件・ASP登録・問い合わせ手段は未設定。法令上必要な表示および情報送信の実態は広告導入前に見直す。
+- 現在の公開用HTMLは `noindex`、`public/robots.txt` はクロール禁止設定。正式公開時には見直す。
