@@ -22,5 +22,7 @@
   "require_affiliate_disclosure": true,
   "require_asp_terms_check": true,
   "allow_ai_only_fact_check": false,
-  "allow_unreviewed_autopublish": false
+  "allow_unreviewed_autopublish": false,
+  "require_disclaimer_on_site_and_articles": true,
+  "disclaimer_text": "当サイトに掲載される情報は、正確性・完全性を保証するものではなく、内容を利用することで生じた損害について、当サイト運営者は故意または重過失がある場合を除き責任を負いません。"
 }
