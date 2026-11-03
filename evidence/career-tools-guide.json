@@ -1,0 +1,23 @@
+{
+  "status": "manual_review_required",
+  "source_retrieved_utc": "2026-11-03",
+  "model": "gemini-3.5-flash-lite",
+  "topic": "career-tools-guide",
+  "sources": [
+    "https://shigoto.mhlw.go.jp/user/howto",
+    "https://www.hellowork.mhlw.go.jp/member/mem_possible.html"
+  ],
+  "claims": [
+    {
+      "claim": "職業情報提供サイトでは様々な自己診断ツールが利用できる",
+      "source_id": "S1",
+      "quote": "自己診断ツール 職業興味検査 仕事価値観検査 職業適性テスト（Gテスト）"
+    },
+    {
+      "claim": "求職者マイページで求人の検索や直接応募が行える",
+      "source_id": "S2",
+      "quote": "求人情報検索（検索条件の保存など） 求人への直接応募（オンライン自主応募）"
+    }
+  ],
+  "warning": "Quote presence is checked mechanically; claim entailment is NOT verified."
+}
