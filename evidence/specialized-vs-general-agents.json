@@ -1,0 +1,51 @@
+{
+  "title": "営業職専門と幅広い職種を扱う転職エージェントの違い｜比較の6つの観点",
+  "slug": "specialized-vs-general-agents",
+  "status": "unpublished_draft_requiring_editor_review",
+  "checked_at": "2026-11-03",
+  "sources": [
+    {
+      "source_id": 1,
+      "name": "hape Agent 公式サイト",
+      "url": "https://agent.hape.co.jp/"
+    },
+    {
+      "source_id": 2,
+      "name": "LHH転職エージェント（個人向け）公式サイト",
+      "url": "https://www.lhh.com/ja-jp/individuals"
+    },
+    {
+      "source_id": 3,
+      "name": "LHH転職エージェント「よくある質問」",
+      "url": "https://www.lhh.com/ja-jp/individuals/faq"
+    },
+    {
+      "source_id": 4,
+      "name": "厚生労働省 job tag「職種カテゴリー別検索」",
+      "url": "https://shigoto.mhlw.go.jp/Search/Field"
+    },
+    {
+      "source_id": 5,
+      "name": "職業安定法（厚生労働省公開）",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=75001000&dataType=0&pageNo=1"
+    },
+    {
+      "source_id": 6,
+      "name": "厚生労働省「職業安定法施行規則改正｜労働条件明示等」",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/haken-shoukai/r0604anteisokukaisei1.html"
+    }
+  ],
+  "checks": {
+    "external_primary_sources_reviewed": true,
+    "internal_source_number_alignment_check": "pending",
+    "no_affiliate_links": true,
+    "disclaimer_included": true,
+    "publication_not_approved": true
+  },
+  "notes": [
+    "一次情報のURLと本文の記述を確認。必ず公開前に出典の最新性と正確な関係を再確認すること",
+    "広告主提携申請・広告リンク設置は未実施",
+    "公表されていない転職成功率や求人件数、体験談は追加していない"
+  ],
+  "preview_path": "ready-to-publish/articles/specialized-vs-general-agents/index.html"
+}
