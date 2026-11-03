@@ -4,15 +4,15 @@
 
 ## 現在の進捗
 - GitHub リポジトリ: 作成済み
-- 仮の Web ページ: `index.html` に作成済み（外部配信は未設定）
+- 公開用Webページ: `public/` 配信
 - 記事候補: `topics.json` に2件登録
 - 記事下書き生成プログラム: `automation/generate_draft.py` 作成済み
 - 定期実行の設定: `.github/workflows/draft.yml` 作成済み（毎週月曜10:17 JST）
 - Gemini APIキー: GitHub Secretsに登録済み（値は非公開）
 - 実行テスト: 2回目のテストで成功（2026-11-03、下書き1本保存）
 - 事実確認: URL取得＋出典原文との短い引用文字列の照合まで。意味の正確さや情報の鮮度を保証しない
-- ASP登録、広告審査、アフィリエイトリンク: **未設定**
-- Cloudflare Pages公開: **未設定**
+- A8.net: 会員登録済み（ユーザー申告）。広告主との提携およびアフィリエイトリンク: **未設定**
+- Cloudflare Pages公開: **公開済み**（過去にユーザー画面で表示確認済み）
 
 ## 設計
 1. 登録した一次情報URLからHTMLテキストを取得する。
@@ -55,6 +55,16 @@
 - 掲載準備用HTML: `ready-to-publish/articles/20s-sales-agent-checklist/index.html`（公開対象の `public/` には未配置）
 - 照合記録: `evidence/20s-sales-agent-checklist.json`
 - 参考資料: 厚生労働省の公式ページ等5件とhape Agent公式1件。出典URLと記事内引用番号の整合確認済み
-- 記事への広告リンク: なし。サイトへの公開: **未実施**
+- 記事への広告リンク: なし。記事ファイル公開: **実施済み**（Cloudflare上の今回の表示は未確認）
 - A8.net: 会員登録完了とユーザー申告あり。hape Agentの成果・否認条件は提供された画面で一部確認済み、提携は未実施
-- 公開前に残る作業: 編集最終確認、問い合わせ窓口整備、広告提携判断、検索エンジン抑制設定の見直し
+- 残る作業: 公開サイトの実表示確認、問い合わせ窓口整備、広告提携判断、追加記事制作
+
+## 1本目公開（2026-11-03）
+- 記事: `public/articles/20s-sales-agent-checklist/index.html`
+- 一覧: `public/articles/index.html`
+- トップページへの記事導線を設定
+- 表示: `https://affiliate-autopilot-3ja.pages.dev/articles/20s-sales-agent-checklist/`（GitHubの登録を確認。Cloudflareの更新反映・画面表示は別途確認が必要）
+- `public/robots.txt`: クロール許可
+- `public/sitemap.xml`: URL 6件を登録
+- 個別記事に広告リンクなし／APIキーは非公開のGitHub Secretsで管理
+- 定期生成する記事の自動公開は未設定のまま。公開判断は個別に行う
