@@ -1,0 +1,19 @@
+[
+  {
+    "slug": "career-tools-guide",
+    "title": "仕事やキャリアを見直すときに活用できる公的な情報ツール",
+    "audience": "転職やキャリアを考えている社会人",
+    "source_urls": [
+      "https://shigoto.mhlw.go.jp/user/howto",
+      "https://www.hellowork.mhlw.go.jp/member/mem_possible.html"
+    ]
+  },
+  {
+    "slug": "job-info-vs-placement",
+    "title": "転職サイトと職業紹介サービスの違いを知る",
+    "audience": "求人サービスを比較する一般の求職者",
+    "source_urls": [
+      "https://www.mhlw.go.jp/stf/shoukaibosyuukubun.html"
+    ]
+  }
+]
