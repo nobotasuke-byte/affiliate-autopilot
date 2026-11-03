@@ -66,7 +66,7 @@ def fetch_official(url):
     return {"url": url, "text": value[:18000]}
 
 
-def generate(topic, sources):
+def generate(topic, sources, repair_note=None):
     payload = {
         "contents": [{
             "role": "user",
@@ -84,7 +84,12 @@ def generate(topic, sources):
                 f"\n題材：{topic['title']}\n読者：{topic['audience']}\n"
                 "参考資料：\n" +
                 "\n".join(f"S{i+1} URL:{s['url']}\n{s['text'][:11000]}"
-                          for i, s in enumerate(sources))
+                          for i, s in enumerate(sources)) +
+                (("\n前の生成結果は検証で拒否されました: " + repair_note +
+                  "。記事全体を最初からJSONで作り直してください。"
+                  "quoteは必ず原文から連続した15～100文字をそのまま抜き出し、"
+                  "短すぎる・長すぎる引用は出力しないでください。")
+                 if repair_note else "")
             )}]
         }],
         "generationConfig": {"responseMimeType": "application/json", "maxOutputTokens": 3600}
@@ -160,8 +165,21 @@ def main():
         if not (1 <= len(urls) <= 3):
             raise ValueError("Each topic needs 1-3 source URLs")
         sources = [fetch_official(url) for url in urls]
-        article = generate(topic, sources)
-        validate(article, sources)
+        # Retry a small number of times when model output fails strict evidence checks.
+        # Every attempt is validated. Nothing is stored when all attempts fail.
+        article = None
+        repair_note = None
+        for attempt in range(3):
+            article = generate(topic, sources, repair_note=repair_note)
+            try:
+                validate(article, sources)
+                break
+            except ValueError as error:
+                repair_note = str(error)
+                print(f"Validation failed (attempt {attempt + 1}/3): {repair_note}")
+                if attempt == 2:
+                    raise
+
         today = datetime.datetime.now(datetime.timezone.utc).date().isoformat()
         lines = [
             "<!-- DRAFT: REVIEW REQUIRED. NOT FOR AUTOMATIC PUBLICATION. -->",
