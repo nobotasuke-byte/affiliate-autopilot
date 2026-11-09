@@ -1,0 +1,22 @@
+{
+  "status": "manual_review_required",
+  "source_retrieved_utc": "2026-11-09",
+  "model": "gemini-3.5-flash-lite",
+  "topic": "job-info-vs-placement",
+  "sources": [
+    "https://www.mhlw.go.jp/stf/shoukaibosyuukubun.html"
+  ],
+  "claims": [
+    {
+      "claim": "職業紹介とは雇用関係の成立をあっせんすること",
+      "source_id": "S1",
+      "quote": "「職業紹介」とは、「求人及び求職の申込みを受け、求人者と求職者との間における雇用関係の成立をあつせんすること」です。"
+    },
+    {
+      "claim": "情報提供のみでっせんを行わない場合は許可等の手続が不要",
+      "source_id": "S1",
+      "quote": "求人情報又は求職者情報を提供するのみで、求人及び求職の申込みを受けず、雇用関係の成立のあっせんを行わない場合は職業紹介には該当せず、許可等の手続は必要ありません。"
+    }
+  ],
+  "warning": "Quote presence is checked mechanically; claim entailment is NOT verified."
+}
