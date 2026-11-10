@@ -1,5 +1,5 @@
 {
-  "status": "manual_review_required",
+  "status": "original_generation_evidence_only_not_final_article_verification",
   "source_retrieved_utc": "2026-11-03",
   "model": "gemini-3.5-flash-lite",
   "topic": "career-tools-guide",
@@ -19,5 +19,7 @@
       "quote": "求人情報検索（検索条件の保存など） 求人への直接応募（オンライン自主応募）"
     }
   ],
-  "warning": "Quote presence is checked mechanically; claim entailment is NOT verified."
+  "warning": "Quote presence is checked mechanically; claim entailment is NOT verified.",
+  "editorial_note": "This ledger contains claims from the initial Gemini output; the subsequently edited and published article differs from that original output. Do not treat this as full-article semantic validation.",
+  "published_file": "public/articles/career-tools-guide/index.html"
 }
