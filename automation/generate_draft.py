@@ -7,6 +7,7 @@ import os
 import pathlib
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -39,6 +40,27 @@ class VisibleText(HTMLParser):
 
 def normalized(value):
     return re.sub(r"\s+", "", html.unescape(value))
+
+
+def retry_transient_http(operation, stage, attempts=3):
+    """Retry temporary upstream HTTP errors; never bypass evidence checks."""
+    transient = {429, 500, 502, 503, 504}
+    for attempt in range(1, attempts + 1):
+        try:
+            return operation()
+        except urllib.error.HTTPError as error:
+            if error.code not in transient or attempt == attempts:
+                print(
+                    f"Failed at {stage}: HTTP {error.code} after {attempt} attempt(s)",
+                    file=sys.stderr,
+                )
+                raise
+            print(
+                f"Temporary HTTP {error.code} at {stage}: retrying "
+                f"({attempt}/{attempts})",
+                file=sys.stderr,
+            )
+            time.sleep(2 ** (attempt - 1))
 
 
 def fetch_official(url):
@@ -165,13 +187,22 @@ def main():
         urls = topic.get("source_urls", [])
         if not (1 <= len(urls) <= 3):
             raise ValueError("Each topic needs 1-3 source URLs")
-        sources = [fetch_official(url) for url in urls]
+        sources = [
+            retry_transient_http(
+                lambda source_url=url: fetch_official(source_url),
+                f"official source: {url}",
+            )
+            for url in urls
+        ]
         # Retry a small number of times when model output fails strict evidence checks.
         # Every attempt is validated. Nothing is stored when all attempts fail.
         article = None
         repair_note = None
         for attempt in range(3):
-            article = generate(topic, sources, repair_note=repair_note)
+            article = retry_transient_http(
+                lambda: generate(topic, sources, repair_note=repair_note),
+                "Gemini draft API",
+            )
             try:
                 validate(article, sources)
                 break
