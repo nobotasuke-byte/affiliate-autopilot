@@ -1,8 +1,7 @@
 name: Generate draft (review required)
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "17 1 * * 1"
+  # Scheduled draft generation is paused pending A8.net partnership decision.
 permissions:
   contents: write
 concurrency:
