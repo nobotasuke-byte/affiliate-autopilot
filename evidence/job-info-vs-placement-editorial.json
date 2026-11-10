@@ -1,0 +1,40 @@
+{
+  "article": "転職サイトと職業紹介サービスの違い――応募する側が知っておきたいこと",
+  "slug": "job-info-vs-placement",
+  "status": "published_editorial_revision",
+  "last_editorial_review_date": "2026-11-10",
+  "origin": "Existing draft edited by another AI and then revised; original Gemini evidence ledger does not describe final full content.",
+  "published_file": "public/articles/job-info-vs-placement/index.html",
+  "sources": [
+    {
+      "id": "S1",
+      "name": "厚生労働省 募集情報等提供と職業紹介の区分",
+      "url": "https://www.mhlw.go.jp/stf/shoukaibosyuukubun.html"
+    },
+    {
+      "id": "S2",
+      "name": "ハローワークインターネットサービス 求職者マイページでできること",
+      "url": "https://www.hellowork.mhlw.go.jp/member/mem_possible.html"
+    },
+    {
+      "id": "S3",
+      "name": "ハローワークインターネットサービス よくあるご質問（仕事をお探しの方）",
+      "url": "https://www.hellowork.mhlw.go.jp/help/question02.html"
+    }
+  ],
+  "corrections": [
+    "Removed illustrative scout description not individually tied to the cited official pages.",
+    "Clarified that direct application including online self-application may be eligible for reemployment allowance subject to statutory conditions; special one-month rule after waiting period for recipients with benefit restrictions.",
+    "Separated source-backed points from general advice and retained the site's established disclaimer."
+  ],
+  "editorial_checks": {
+    "three_primary_sources_listed": true,
+    "source_links_and_article_anchors_present": true,
+    "no_affiliate_links": true,
+    "site_disclaimer_present": true,
+    "published_in_github_public": true,
+    "cloudflare_render_tested": false,
+    "semantic_entailment_of_every_statement_independently_verified": false
+  },
+  "important": "Previous evidence/job-info-vs-placement.json is an AI-generation snapshot and must not be used as proof of the edited and published article."
+}
